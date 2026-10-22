@@ -1,0 +1,21 @@
+
+name: My First Workflow
+
+on: push
+
+jobs:
+  learn:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome message
+        run: echo "Hello! My first GitHub Actions workflow is working."
+
+      - name: Check Linux version
+        run: cat /etc/os-release
+
+      - name: Show current directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
